@@ -31,7 +31,7 @@ app.post('/callback', line.middleware(config), (req, res) => {
 // event handler
 function handleEvent(event) {
   console.log('=========================')
-  console.log(event)
+  console.log(JSON.stringify(event, null, 2))
   console.log('=========================')
   return Promise.resolve(null)
 }
